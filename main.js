@@ -40,13 +40,33 @@ eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=w
 
 /***/ }),
 
-/***/ "./src/chef.jpg":
-/*!**********************!*\
-  !*** ./src/chef.jpg ***!
-  \**********************/
+/***/ "./src/img/chef.jpg":
+/*!**************************!*\
+  !*** ./src/img/chef.jpg ***!
+  \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"70b3644cd300ea58d0d1f830b92bbf06.jpg\");\n\n//# sourceURL=webpack://restaurant-page/./src/chef.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"70b3644cd300ea58d0d1f830b92bbf06.jpg\");\n\n//# sourceURL=webpack://restaurant-page/./src/img/chef.jpg?");
+
+/***/ }),
+
+/***/ "./src/img/map.png":
+/*!*************************!*\
+  !*** ./src/img/map.png ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"b17fd18c87247e011bb7713f917ebc50.png\");\n\n//# sourceURL=webpack://restaurant-page/./src/img/map.png?");
+
+/***/ }),
+
+/***/ "./src/img/pizza.png":
+/*!***************************!*\
+  !*** ./src/img/pizza.png ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"08f6436bd4c51dcf77a78483dd0274c9.png\");\n\n//# sourceURL=webpack://restaurant-page/./src/img/pizza.png?");
 
 /***/ }),
 
@@ -120,23 +140,33 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
-/***/ "./src/footerModule.js":
-/*!*****************************!*\
-  !*** ./src/footerModule.js ***!
-  \*****************************/
+/***/ "./src/about.js":
+/*!**********************!*\
+  !*** ./src/about.js ***!
+  \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   footer: () => (/* binding */ footer)\n/* harmony export */ });\nfunction footer(){\n    const footer = document.querySelector('footer');\n\n    const copyrightParagraph = document.createElement('p');\n    copyrightParagraph.textContent = 'Copyright ';\n\n    const copyrightSpan = document.createElement('span');\n    copyrightSpan.classList.add('copy');\n    copyrightSpan.innerHTML = '&copy;';\n    copyrightParagraph.appendChild(copyrightSpan);\n\n    const currentYearSpan = document.createElement('span');\n    currentYearSpan.id = 'year';\n    currentYearSpan.textContent = new Date().getFullYear();\n    copyrightParagraph.appendChild(currentYearSpan);\n\n    copyrightParagraph.textContent += ' sebastianmsz ';\n\n    const githubLink = document.createElement('a');\n    githubLink.href = 'https://github.com/sebastianmsz';\n    githubLink.target = '_blank';\n\n    const githubIcon = document.createElement('i');\n    githubIcon.classList.add('fa', 'fa-github');\n    githubIcon.setAttribute('aria-hidden', 'true');\n    githubLink.appendChild(githubIcon);\n\n    copyrightParagraph.appendChild(githubLink);\n\n    footer.appendChild(copyrightParagraph);\n}\n\n//# sourceURL=webpack://restaurant-page/./src/footerModule.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   aboutContent: () => (/* binding */ aboutContent)\n/* harmony export */ });\n/* harmony import */ var _img_map_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/map.png */ \"./src/img/map.png\");\n\nfunction aboutContent(){\n    let container = document.querySelector('#content');\n\n    const paragraph1 = document.createElement('p');\n    paragraph1.textContent = '📞123 456 789';\n\n    const paragraph2 = document.createElement('p');\n    paragraph2.textContent = '🏠New York, 10013, EE. UU';\n\n    const mapImage = document.createElement('img');\n    mapImage.src = _img_map_png__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n    mapImage.height = '500';\n\n    container.append(paragraph1, paragraph2, mapImage);\n}\n\n//# sourceURL=webpack://restaurant-page/./src/about.js?");
 
 /***/ }),
 
-/***/ "./src/homeContentModule.js":
-/*!**********************************!*\
-  !*** ./src/homeContentModule.js ***!
-  \**********************************/
+/***/ "./src/footer.js":
+/*!***********************!*\
+  !*** ./src/footer.js ***!
+  \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   homeContent: () => (/* binding */ homeContent)\n/* harmony export */ });\n/* harmony import */ var _chef_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./chef.jpg */ \"./src/chef.jpg\");\n\nfunction homeContent(){\n    let container = document.querySelector('#content');\n    const paragraph1 = document.createElement('p');\n    paragraph1.textContent = 'Best pizza in your country Made with passion since 1908';\n    const chefPhoto = document.createElement('img');\n    chefPhoto.src = _chef_jpg__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n    chefPhoto.height = '450';\n    const paragraph2 = document.createElement('p');\n    paragraph2.textContent = 'Order online or visit us!';\n    container.append(paragraph1, chefPhoto, paragraph2);\n}\n\n//# sourceURL=webpack://restaurant-page/./src/homeContentModule.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   footerContent: () => (/* binding */ footerContent)\n/* harmony export */ });\nfunction footerContent(){\n    const footer = document.querySelector('footer');\n\n    const copyrightParagraph = document.createElement('p');\n    copyrightParagraph.textContent = 'Copyright ';\n\n    const copyrightSpan = document.createElement('span');\n    copyrightSpan.classList.add('copy');\n    copyrightSpan.innerHTML = '&copy;';\n    copyrightParagraph.appendChild(copyrightSpan);\n\n    const currentYearSpan = document.createElement('span');\n    currentYearSpan.id = 'year';\n    currentYearSpan.textContent = new Date().getFullYear();\n    copyrightParagraph.appendChild(currentYearSpan);\n\n    copyrightParagraph.textContent += ' sebastianmsz ';\n\n    const githubLink = document.createElement('a');\n    githubLink.href = 'https://github.com/sebastianmsz';\n    githubLink.target = '_blank';\n\n    const githubIcon = document.createElement('i');\n    githubIcon.classList.add('fa', 'fa-github');\n    githubIcon.setAttribute('aria-hidden', 'true');\n    githubLink.appendChild(githubIcon);\n\n    copyrightParagraph.appendChild(githubLink);\n\n    footer.appendChild(copyrightParagraph);\n}\n\n//# sourceURL=webpack://restaurant-page/./src/footer.js?");
+
+/***/ }),
+
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   homeContent: () => (/* binding */ homeContent)\n/* harmony export */ });\n/* harmony import */ var _img_chef_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/chef.jpg */ \"./src/img/chef.jpg\");\n\nfunction homeContent(){\n    let container = document.querySelector('#content');\n\n    const paragraph1 = document.createElement('p');\n    paragraph1.textContent = 'Best pizza in your country';\n\n    const paragraph2 = document.createElement('p');\n    paragraph2.textContent = 'Made with passion since 1967';\n\n    const chefPhoto = document.createElement('img');\n    chefPhoto.src = _img_chef_jpg__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n    chefPhoto.height = '450';\n\n    const paragraph3 = document.createElement('p');\n    paragraph3.textContent = 'Order online or visit us!';\n    \n    container.append(paragraph1, paragraph2, chefPhoto, paragraph3);\n}\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
 
 /***/ }),
 
@@ -146,7 +176,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _homeContentModule__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homeContentModule */ \"./src/homeContentModule.js\");\n/* harmony import */ var _footerModule__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footerModule */ \"./src/footerModule.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n(0,_homeContentModule__WEBPACK_IMPORTED_MODULE_0__.homeContent)();\n(0,_footerModule__WEBPACK_IMPORTED_MODULE_1__.footer)();\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./about */ \"./src/about.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n\n\n\n(function(){\n    (0,_home__WEBPACK_IMPORTED_MODULE_0__.homeContent)();\n    (0,_footer__WEBPACK_IMPORTED_MODULE_3__.footerContent)();\n    (function(){\n        const buttons = document.querySelectorAll('button');\n        buttons.forEach(button => {\n            button.addEventListener('click', buttonHandler);\n            function buttonHandler(){\n                document.querySelector('#content').innerHTML='';\n                switch (button.textContent) {\n                    case 'Home':\n                        (0,_home__WEBPACK_IMPORTED_MODULE_0__.homeContent)();\n                        break;\n                    case 'About':\n                        (0,_about__WEBPACK_IMPORTED_MODULE_1__.aboutContent)();\n                        break;\n                    case 'Menu':\n                        (0,_menu__WEBPACK_IMPORTED_MODULE_2__.menuContent)();\n                        break;\n                }\n            }\n        });\n    })()\n    \n})()\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   menuContent: () => (/* binding */ menuContent)\n/* harmony export */ });\n/* harmony import */ var _img_pizza_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/pizza.png */ \"./src/img/pizza.png\");\n\nfunction menuContent(){\n    let container = document.querySelector('#content');\n\n    const pizzaImg = document.createElement('img');\n    pizzaImg.src = _img_pizza_png__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n    pizzaImg.height = '200';\n\n    function createCard(title, description, imgPath) {\n        const card = document.createElement('div');\n        const cardH2 = document.createElement('h2');\n        cardH2.textContent = title;\n        const cardP = document.createElement('p');\n        cardP.textContent = description;\n        const cardImg = document.createElement('img');\n        cardImg.src = imgPath;\n        cardImg.height = '200';\n        card.append(cardImg, cardH2, cardP);\n        return card;\n    }\n\n    const card1 = createCard('Marinara', 'This pizza includes tomatoes, garlic, oregano, and extra virgin olive oil.', _img_pizza_png__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n    const card2 = createCard('Margherita', 'This pizza includes tomatoes, sliced mozzarella, basil, and extra virgin olive oil.', _img_pizza_png__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n    const card3 = createCard('Pepperoni', 'This pizza includes pepperoni, tomato sauce, and mozzarella cheese.', _img_pizza_png__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n    const card4 = createCard('Hawaiian', 'This pizza includes ham, pineapple, tomato sauce, and mozzarella cheese.', _img_pizza_png__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n    const card5 = createCard('Supreme', 'This pizza includes pepperoni, sausage, green peppers, onions, mushrooms, tomato sauce, and mozzarella cheese.', _img_pizza_png__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n    const card6 = createCard('Veggie', 'This pizza includes green peppers, onions, mushrooms, black olives, tomato sauce, and mozzarella cheese.', _img_pizza_png__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n    const card7 = createCard('BBQ Chicken', 'This pizza includes BBQ sauce, grilled chicken, red onion, cilantro, and mozzarella cheese.', _img_pizza_png__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n    const card8 = createCard('Meat Lovers', 'This pizza includes pepperoni, sausage, bacon, ham, tomato sauce, and mozzarella cheese.', _img_pizza_png__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n    container.append(card1, card2, card3, card4, card5, card6, card7, card8);\n}\n\n//# sourceURL=webpack://restaurant-page/./src/menu.js?");
 
 /***/ })
 
