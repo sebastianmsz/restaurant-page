@@ -1,4 +1,4 @@
-export function footer(){
+export function footerContent(){
     const footer = document.querySelector('footer');
 
     const copyrightParagraph = document.createElement('p');
