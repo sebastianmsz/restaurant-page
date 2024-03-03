@@ -4,7 +4,6 @@ export function menuContent(){
 
     const pizzaImg = document.createElement('img');
     pizzaImg.src = img;
-    pizzaImg.height = '200';
 
     function createCard(title, description, imgPath) {
         const card = document.createElement('div');
@@ -14,8 +13,9 @@ export function menuContent(){
         cardP.textContent = description;
         const cardImg = document.createElement('img');
         cardImg.src = imgPath;
-        cardImg.height = '200';
+        cardImg.height = '180';
         card.append(cardImg, cardH2, cardP);
+        card.className = 'card';
         return card;
     }
 
@@ -29,4 +29,5 @@ export function menuContent(){
     const card8 = createCard('Meat Lovers', 'This pizza includes pepperoni, sausage, bacon, ham, tomato sauce, and mozzarella cheese.', img);
 
     container.append(card1, card2, card3, card4, card5, card6, card7, card8);
+    container.className = 'menu-content';
 }

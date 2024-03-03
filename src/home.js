@@ -10,10 +10,11 @@ export function homeContent(){
 
     const chefPhoto = document.createElement('img');
     chefPhoto.src = img;
-    chefPhoto.height = '450';
+    chefPhoto.height = '400';
 
     const paragraph3 = document.createElement('p');
     paragraph3.textContent = 'Order online or visit us!';
     
     container.append(paragraph1, paragraph2, chefPhoto, paragraph3);
+    container.className = 'home-content';
 }

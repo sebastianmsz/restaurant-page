@@ -12,6 +12,11 @@ import './style.css';
         buttons.forEach(button => {
             button.addEventListener('click', buttonHandler);
             function buttonHandler(){
+                buttons.forEach(button => {
+                    button.className = '';
+                });
+                button.className = 'active-button';
+
                 document.querySelector('#content').innerHTML='';
                 switch (button.textContent) {
                     case 'Home':

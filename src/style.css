@@ -1,3 +1,224 @@
-footer a{
-    color: black;
+/*css reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*css reset*/
+  
+/*global*/
+:root {
+	--system-ui: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	font-family: var(--system-ui);
+	box-sizing: border-box;
+}
+body{
+	position: relative;
+	min-height: 94.637vh;
+	padding-bottom: 50px;
+	background-color: rgb(28, 28, 28);
+}
+/*global*/
+
+/*header*/
+header{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: clamp(2rem, 1.6250rem + 1.6667vw, 2.5rem);
+    background-color: rgb(93, 20, 20);
+    color: rgb(245, 245, 245);
+    gap: 20px;
+    font-weight: bold;
+}
+button{
+	font-family: var(--system-ui);
+	cursor: pointer;
+	transition: ease-in-out 1s;
+	-webkit-transition : -webkit-filter 60ms linear;
+    border: none;
+    padding: 10px;
+    background-color: rgb(158, 158, 158);
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: aliceblue;
+    width: 200px;
+}
+button:hover{
+	filter: brightness(85%);
+}
+button:active{
+	filter: brightness(75%);
+}
+.active-button{
+    background-color: brown;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+}
+/*header*/
+
+/*content*/
+#content{
+    max-width: 800px;
+    background-color: rgb(90, 90, 90);
+    margin: 30px auto;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 4px;
+}
+#content p{
+    font-size: 1.2rem;
+}
+#content img{
+    margin: 20px 10px;
+    border-radius: 4px;
+}
+
+.home-content{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: rgb(239, 239, 239);
+    
+}
+.menu-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(97, 97, 97);
+    gap: 10px;
+    padding: 20px;
+    color: rgb(233, 233, 233);
+    transition: filter 200ms linear;
+}
+.card:hover{
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+.card h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(241, 241, 241);
+}
+.card p{
+    text-align: center;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    color: rgb(241, 241, 241);
+}
+.about-content img{
+    align-self: center;
+}
+/*content*/
+
+/*footer*/
+footer{
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	font-size: clamp(1.4rem, 1.5500rem + -0.6667vw, 1.2rem);
+	justify-content:center;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: rgb(243, 243, 243);
+	line-height: 25px;
+}
+footer a{
+	margin-left: 4px;
+    color: inherit;
+}
+footer p{
+	text-align: center;
+}
+.fa-github{
+	scale: 1.2;
+    transition: transform 0.3s ease-in-out;
+}
+.fa-github:hover{
+    transform: rotate(360deg) scale(1.2);
+}
+/*footer*/
+
+/*mobile*/
+@media screen {
+    @media (max-width:600px) {
+        header{
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        header h1{
+            text-align: center;
+        }
+        header button{
+            width: 100px;
+        }
+        .home-content img,
+        .about-content img{
+            height: 300px;
+        }
+    }
+}
+@media screen {
+    @media (max-width:880px) {
+        #content{
+            margin: 20px;
+        }
+    }
+}
+/*mobile*/
